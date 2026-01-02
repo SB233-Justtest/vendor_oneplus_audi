@@ -198,7 +198,6 @@
             </usecase>
             <usecase>
                 <name>PAL_STREAM_DEEP_BUFFER</name>
-                <ec_enable>1</ec_enable>
                 <custom-config key="unprocessed-hdr-mic-landscape">
                     <channels>4</channels>
                     <snd_device_name>unprocessed-hdr-mic-landscape</snd_device_name>
@@ -246,6 +245,9 @@
                 <custom-config key="normalrec-mic">
                     <channels>2</channels>
                     <snd_device_name>handset-mic</snd_device_name>
+                </custom-config>
+                <custom-config key="4ch-aec-mic">
+                    <ec_enable>1</ec_enable>
                 </custom-config>
             </usecase>
         <!--Uncomment these lines instead of above lines if needing to enable EC per custom key
@@ -492,7 +494,6 @@
             </usecase>
             <usecase>
                 <name>PAL_STREAM_DEEP_BUFFER</name>
-                <ec_enable>1</ec_enable>
                 <custom-config key="ktv-mic2rec">
                     <channels>1</channels>
                     <snd_device_name>headset-mic</snd_device_name>
@@ -642,7 +643,6 @@
             </usecase>
             <usecase>
                 <name>PAL_STREAM_DEEP_BUFFER</name>
-                <ec_enable>1</ec_enable>
                 <custom-config key="ktv-mic2rec">
                     <channels>1</channels>
                     <snd_device_name>usb-headset-mic</snd_device_name>
@@ -1239,7 +1239,6 @@
             <name>PAL_STREAM_DEEP_BUFFER</name>
                 <policies>
                     <ec_ref>
-                        <disabled_stream>PAL_STREAM_LOW_LATENCY</disabled_stream>
                         <disabled_stream>PAL_STREAM_GENERIC</disabled_stream>
                     </ec_ref>
                 </policies>
